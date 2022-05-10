@@ -1,6 +1,8 @@
 import Header from "./Components/Header/Header";
 import Hero from "./Components/Hero/Hero";
 import HowItWorks from "./Components/HowItWorks/HowItWorks";
+import JobOffers from "./Components/JobOffers/JobOffers";
+// import JobOffers from "./Components/JobOffers/JobOffers";
 import WhoShouldJoin from "./Components/WhoShouldJoin/WhoShouldJoin";
 
 function App() {
@@ -12,6 +14,7 @@ function App() {
       </div>
       <HowItWorks />
       <WhoShouldJoin />
+      <JobOffers />
     </div>
   );
 }
