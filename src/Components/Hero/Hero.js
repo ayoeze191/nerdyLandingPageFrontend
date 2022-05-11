@@ -4,8 +4,8 @@ import Ellipse1 from "./../../Assets/Ellipse483 (1).png"
 import Ellipse2 from "./../../Assets/Ellipse2.png"
 const Hero = () => {
   return (
-    <div className='hero mx-auto text-white w-full flex flex-col items-center gap-10 sm:flex-row sm:justify-between pt-20 md:pt-0 overflow-hidden 2xl:container relative sm:flex-1'>
-        <div className='flex flex-col gap-8 sm:items-start px-8 items-center'>
+    <div className='hero mx-auto text-white w-5/6 flex flex-col items-center gap-10 sm:flex-row sm:justify-between overflow-hidden sm:flex-1 sm:container'>
+        <div className='flex flex-col gap-8 sm:items-start px-8 items-center '>
         <h1 className='font-Montserrat-Bold text-2xl text-center sm:text-left md:text-4xl'>GET MATCHED & LET YOUR JOB FIND YOU</h1>
         <h3 className='text-center text-xs font-Montserrat-Medium sm:text-sm md:text-base sm:text-left'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Condimentum lectus placerat id in vehicula felis</h3>
         <button className='bg-[#D23432] border-0 rounded-md px-4 text-base font-Montserrat-Bold py-4 md:px-6'>For Talents</button>

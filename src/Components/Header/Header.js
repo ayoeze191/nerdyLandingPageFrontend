@@ -10,7 +10,7 @@ import angleDown from "./../../Assets/angleDown.png"
 
 const Header = () => {
   return (
-    <div className='mx-auto px-8 flex justify-between items-center text-white w-full  lg:px-16 2xl:container'>
+    <div className='mx-auto flex justify-between items-center text-white w-5/6   sm:container p-4'>
     <div className='w-16 sm:w-20'>
         <img src={Logo} className = 'w-full'/>
     </div>

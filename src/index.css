@@ -20,43 +20,76 @@
 
 }
 
-.swiper-pagination .swiper-pagination-bullet{
+.courses .swiper-pagination .swiper-pagination-bullet{
   @apply bg-[#222222] w-3 h-3 opacity-100;
 }
-.swiper-pagination .swiper-pagination-bullet-active {
+.courses .swiper-pagination .swiper-pagination-bullet-active {
   @apply bg-[#575757];
 }
-.swiper-slide{
+.courses .swiper-slide{
   @apply px-10  
 }
-.swiper-pagination {
-  position: relative;
+.courses .swiper-pagination {
   @apply md:hidden
 }
-.swiper-slide{
+.courses .swiper-slide{
   @apply bg-[#222222]/40 rounded-3xl px-7 py-8 flex flex-col 
 }
-.swiper-button-next, .swiper-button-prev{
-  @apply bg-[#222222] px-8 py-8 rounded-full w-fit
+.courses .swiper-button-next, .courses .swiper-button-prev{
+  @apply bg-[#222222] px-5 py-8 rounded-full w-fit
 }
 
 
- .swiper-button-next, .swiper-button-prev{
+.courses .swiper-button-next, .courses .swiper-button-prev{
   display: none !important;
 }
 @media screen and (min-width: 640px) {
-  .swiper-button-next, .swiper-button-prev{
+  .courses .swiper-button-next, .courses .swiper-button-prev{
     display: flex !important;
   }
 } 
 
-.swiper-button-next::after, .swiper-button-prev::after{
+.courses .swiper-button-next::after, .courses .swiper-button-prev::after{
   @apply text-[#ffffff] 
 }
 
-
-.swiper-wrapper{
+.courses .swiper-wrapper{
   @apply mb-12 w-1/2 
+}
+
+.testifiers .swiper-pagination{
+}
+
+.testifiers .swiper-pagination .swiper-pagination-bullet-active {
+  @apply bg-[#C4C4C4] border-0
+}
+
+
+
+.testifiers .swiper-pagination .swiper-pagination-bullet{
+  @apply w-3 h-3 border-solid border-[3px] border-[#C3C2C2] box-content;
+}
+
+.testifiers .swiper-wrapper{
+  @apply mb-36 w-1/2 
+}
+.testifiers .swiper-pagination-current{
+  @apply block
+}
+.testifiers .swiper-button-next, .testifiers .swiper-button-prev{
+  display: none !important;
+}
+.testifiers .activ .images{
+  width: 130px !important; 
+  transition: all 0.5s;
+}
+
+.testifiers .activ .name{
+  font-size: 28px !important;
+}
+
+.testifiers .activ .text{
+  font-size: 18px !important;
 }
 
 
@@ -79,11 +112,20 @@
   font-family: 'Montserrat-Medium';
   src: local('Montserrat-Medium'), url(./Fonts/Montserrat-Medium.ttf) format('truetype');
 }
-/*
 @font-face {
-  font-family: 'Poppins-Bold';
-  src: local('Poppins-Bold'), url(./Fonts/Poppins-Bold.ttf) format('truetype');
+  font-family: 'Montserrat-normal';
+  src: local('Montserrat-normal'), url(./Fonts/Montserrat-SemiBold.ttf) format('truetype');
 }
+
+.sectors{
+  background: linear-gradient(180deg, rgba(7, 7, 7, 0) 0%, #020202 100%);
+}
+
+
+
+
+/*
+
 
 @font-face {
   font-family: 'Inter-ExtraLight';

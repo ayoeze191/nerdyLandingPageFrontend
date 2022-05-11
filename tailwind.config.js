@@ -6,7 +6,14 @@ module.exports = {
   theme: {
     extend: {
       container: {
-        center: true
+        center: true,
+        screens: {
+          sm: "580px",
+          md: "688px",
+          lg: '943px',
+          xl: "1200px",
+        '2xl': '14700px' 
+        }
       },
      screens: {
        md:'800px',
@@ -14,7 +21,8 @@ module.exports = {
      },
      fontFamily: {
        'Montserrat-Bold': ['Montserrat-Bold'],
-       'Montserrat-Medium': ['Montserrat-Medium']
+       'Montserrat-Medium': ['Montserrat-Medium'],
+       'Montserrat-normal': ['Montserrat-normal']
      } 
     },
   },

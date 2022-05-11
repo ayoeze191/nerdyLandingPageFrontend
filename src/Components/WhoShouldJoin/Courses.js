@@ -7,12 +7,14 @@ import UIUX from './../../Assets/UIUX.png'
 import Course from './Course';
 import swiper from "swiper/css/bundle"
 import { Swiper, SwiperSlide } from 'swiper/react'
-import SwiperCore, { Navigation, Pagination, Scrollbar, A11y, Autoplay } from 'swiper';
+import SwiperCore, { Navigation, Pagination, Scrollbar, A11y, Autoplay, Zoom, EffectCoverflow } from 'swiper';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 import 'swiper/css/scrollbar';
 import 'swiper/css/bundle'
 import 'swiper/css'
+// import "swiper/css/zoom";
+import "swiper/css/effect-coverflow";
 SwiperCore.use([Navigation, Pagination, Scrollbar, A11y, Autoplay])
 
 
@@ -25,17 +27,19 @@ const Courses = () => {
       ])
     
   return (
-    <div className=''>
+    <div className="courses">
  
         <Swiper
+       
         loop = {true}
         speed={600}
       spaceBetween={50}
+      modules={[EffectCoverflow, Pagination]}
       autoplay = {{"delay": 5000}}
       pagination = {{clickable: true}}
       navigation = {true}
       // scrollbar={{ draggable: true }}
-      slidesPerView='auto'
+      slidesPerView={'auto'}
       breakpoints={{320: {
         slidesPerView: 1,
         spaceBetween: 40,
@@ -54,6 +58,7 @@ const Courses = () => {
       onSlideChange={() => console.log('slide change')}
       onSwiper={(swiper) => console.log(swiper)}
       autoHeight = {true}
+     
       
       >
         {lis.map((a) => <SwiperSlide> 
