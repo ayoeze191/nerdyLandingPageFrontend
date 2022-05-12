@@ -12,7 +12,7 @@ const HowItWorks = () => {
   return (
     <div className='block md:w-full mx-auto bg-[#222222]/40  py-14 text-white'>
         <h3 className='text-white font-Montserrat-Bold text-3xl text-center mb-10'>HOW IT WORKS</h3>
-        <div className='md:flex sm:gap-10  w-5/6 sm:container mx-auto'>
+        <div className='md:flex sm:gap-10 w-[90%] sm:container mx-auto'>
         {lis.map((a) =>  <How {...a} />)}
         </div>
     </div>

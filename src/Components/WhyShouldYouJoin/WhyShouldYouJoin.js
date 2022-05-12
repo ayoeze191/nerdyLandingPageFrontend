@@ -3,7 +3,7 @@ import Pupil from "./../../Assets/Pupil.png";
 import Get from "./../../Assets/Get.png"
 const WhyShouldYouJoin = () => {
   return (
-    <div className='md:flex w-5/6 mx-auto mt-20 sm:px-10 max-w-[1650px]'>
+    <div className='md:flex w-[90%] mx-auto mt-20 sm:px-10 max-w-[1650px]'>
         <div className='hidden md:block w-full'>
             <img src={Pupil} className = 'h-full w-full'/>
         </div>

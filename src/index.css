@@ -30,13 +30,17 @@
   @apply px-10  
 }
 .courses .swiper-pagination {
-  @apply md:hidden
+  @apply sm:hidden
 }
 .courses .swiper-slide{
   @apply bg-[#222222]/40 rounded-3xl px-7 py-8 flex flex-col 
 }
 .courses .swiper-button-next, .courses .swiper-button-prev{
-  @apply bg-[#222222] px-5 py-8 rounded-full w-fit
+  @apply bg-[#222222] px-5 py-8 rounded-full w-fit hidden
+}
+
+.courses .swiper-wrapper{
+  @apply flex justify-between bg-red-400
 }
 
 
@@ -45,7 +49,7 @@
 }
 @media screen and (min-width: 640px) {
   .courses .swiper-button-next, .courses .swiper-button-prev{
-    display: flex !important;
+    display: none !important;
   }
 } 
 
@@ -54,7 +58,7 @@
 }
 
 .courses .swiper-wrapper{
-  @apply mb-12 w-1/2 
+  @apply mb-12 bg-green-900
 }
 
 .testifiers .swiper-pagination{
@@ -80,16 +84,17 @@
   display: none !important;
 }
 .testifiers .activ .images{
-  width: 130px !important; 
+  width: 80px !important; 
   transition: all 0.5s;
 }
 
 .testifiers .activ .name{
-  font-size: 28px !important;
+  font-size: 1.5rem !important;
 }
 
 .testifiers .activ .text{
-  font-size: 18px !important;
+  font-size: 1.05rem !important;
+  line-height: 10rem;
 }
 
 

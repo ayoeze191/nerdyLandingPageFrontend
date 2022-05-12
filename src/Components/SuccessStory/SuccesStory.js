@@ -53,7 +53,7 @@ const SuccesStory = () => {
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Condimentum
         lectus placerat id in vehicula facilisi. Fusce tellus fringill
       </h1>
-      <div className="testifiers w-[]90%] mx-auto max-w-[1950px]">
+      <div className="testifiers">
         <Swiper
           onInit={(swiper) => {
             swiper.activeIndex = 1;
@@ -85,7 +85,7 @@ const SuccesStory = () => {
               spaceBetween: 40,
             },
             640: {
-              slidesPerView: 1,
+              slidesPerView: 3,
               spaceBetween: 40,
             },
             1200: {

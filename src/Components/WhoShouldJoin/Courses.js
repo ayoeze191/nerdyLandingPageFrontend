@@ -5,16 +5,14 @@ import Graphics from './../../Assets/Graphics.png'
 import Developer from './../../Assets/Developer.png'
 import UIUX from './../../Assets/UIUX.png'
 import Course from './Course';
-import swiper from "swiper/css/bundle"
+import { useRef } from 'react'
 import { Swiper, SwiperSlide } from 'swiper/react'
 import SwiperCore, { Navigation, Pagination, Scrollbar, A11y, Autoplay, Zoom, EffectCoverflow } from 'swiper';
-import 'swiper/css/navigation';
 import 'swiper/css/pagination';
-import 'swiper/css/scrollbar';
-import 'swiper/css/bundle'
-import 'swiper/css'
-// import "swiper/css/zoom";
-import "swiper/css/effect-coverflow";
+import LEFTARROW from "./../../Assets/LEFTARROW.png"
+import RIGHTARROW from "./../../Assets/RIGHTARROW.png"
+
+
 SwiperCore.use([Navigation, Pagination, Scrollbar, A11y, Autoplay])
 
 
@@ -25,20 +23,32 @@ const Courses = () => {
         {image: Graphics, title: 'Graphic Design'},
         {image: Developer, title: 'Developer'},
       ])
+
+    const prevRef = useRef(null)
+    const nextRef = useRef(null)
     
   return (
-    <div className="courses">
- 
+    <div className="courses flex gap-4 items-center">
+         <div className='prevNav text-white cursor-pointer mb-10' ref={prevRef}> <img src={LEFTARROW} className = "w-28" /></div>
         <Swiper
        
         loop = {true}
         speed={600}
       spaceBetween={50}
-      modules={[EffectCoverflow, Pagination]}
+      modules={[Pagination]}
       autoplay = {{"delay": 5000}}
       pagination = {{clickable: true}}
-      navigation = {true}
-      // scrollbar={{ draggable: true }}
+      navigation = {{
+          prevEl: prevRef.current?prevRef.current:undefined,
+          nextEl: nextRef.current?nextRef.current:undefined
+      }}
+      onBeforeInit={(swiper) => {
+          swiper.params.navigation.prevEl = prevRef.current;
+          swiper.params.navigation.nextEl = nextRef.current;
+          swiper.navigation.update()
+      }}
+
+   
       slidesPerView={'auto'}
       breakpoints={{320: {
         slidesPerView: 1,
@@ -47,11 +57,11 @@ const Courses = () => {
       },640: {
         slidesPerView: 2,
         spaceBetween: 40
-      },  800: {
+      },  900: {
         slidesPerView: 3,
         spaceBetween: 40
       },
-      1000: {
+      1200: {
         slidesPerView: 4,
         spaceBetween: 40
       }}}
@@ -59,13 +69,15 @@ const Courses = () => {
       onSwiper={(swiper) => console.log(swiper)}
       autoHeight = {true}
      
-      
+      className = 'w-full'
       >
+       
         {lis.map((a) => <SwiperSlide> 
           <Course {...a}/>
           </SwiperSlide>)}
+  
         </Swiper>
-
+        <div className='nextNav text-white cursor-pointer mb-10' ref={nextRef}><img src={RIGHTARROW} className = "w-28"/> </div>
     </div>
   )
 }

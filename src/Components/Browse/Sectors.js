@@ -2,7 +2,7 @@ import React from 'react'
 
 const Sectors = (props) => {
   return (
-    <div className='relative  px-0 mb-10 w-4/5 mx-auto flex  md:mb-0'>
+    <div className='relative  px-0 mb-10 w-full mx-auto flex  md:mb-0'>
         <div className='w-full relative '>
             <img src={props.image} className = 'w-full mx-auto h-full' />
         </div>
