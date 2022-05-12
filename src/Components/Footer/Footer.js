@@ -13,7 +13,7 @@ const Footer = () => {
         <img src={logo2} className = 'hidden md:block'/>
         <img src={logofooter}  className = ' md:hidden'/>
       </div>
-      <div className='grid grid-cols-1 lg:grid-cols-3 gap-20'>
+      <div className='grid grid-cols-1 md:grid-cols-3 gap-20'>
         <div className='text-[#7E7777] md:text-white flex flex-col text-sm md:text-base'>
           <h1 className=' text-white md:text-[#222222] text-lg font-Montserrat-Bold mb-5 font-bold'>Contact</h1>
           <p className='mb-4 font-Montserrat-Medium'>We build and we teach tech and digital solutions</p>
