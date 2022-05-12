@@ -85,10 +85,10 @@ const SuccesStory = () => {
               spaceBetween: 40,
             },
             640: {
-              slidesPerView: 3,
+              slidesPerView: 1,
               spaceBetween: 40,
             },
-            1200: {
+            1000: {
               slidesPerView: 3,
               spaceBetween: 40,
             },
