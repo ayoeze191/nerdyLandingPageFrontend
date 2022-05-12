@@ -34,7 +34,7 @@ const Courses = () => {
        
         loop = {true}
         speed={600}
-      spaceBetween={10}
+      spaceBetween={50}
       modules={[Pagination]}
       autoplay = {{"delay": 5000}}
       pagination = {{clickable: true}}
@@ -47,7 +47,6 @@ const Courses = () => {
           swiper.params.navigation.nextEl = nextRef.current;
           swiper.navigation.update()
       }}
-
    
       slidesPerView={'auto'}
       breakpoints={{320: {

@@ -46,10 +46,10 @@ const SuccesStory = () => {
         src={signature}
         className="mx-auto mb-14 lg:mb-14 lg:w-96 lg:h-[53px]"
       />
-      <h1 className="text-[#ffffff] font-Montserrat-Bold  text-3xl text-center mb-10">
+      <h1 className="text-[#ffffff] font-Montserrat-Bold  text-3xl text-center mb-8">
         SUCCESS STORIES
       </h1>
-      <h1 className="text-[#ffffff] font-Montserrat-Medium text-center mb-10">
+      <h1 className="text-[#ffffff] font-Montserrat-Medium text-center mb-10 max-w-3xl mx-auto">
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Condimentum
         lectus placerat id in vehicula facilisi. Fusce tellus fringill
       </h1>
