@@ -1,4 +1,6 @@
 import Browse from "./Components/Browse/Browse";
+import Footer from "./Components/Footer/Footer";
+import FooterBottom from "./Components/Footer/FooterBottom";
 import Header from "./Components/Header/Header";
 import Hero from "./Components/Hero/Hero";
 import HowItWorks from "./Components/HowItWorks/HowItWorks";
@@ -11,8 +13,8 @@ import WhyShouldYouJoin from "./Components/WhyShouldYouJoin/WhyShouldYouJoin";
 
 function App() {
   return (
-    <div className="App py-4 bg-black">
-      <div className="md:h-screen flex flex-col gap-16 md:gap-0 lg:gap-0 px-0 ">
+    <div className="App pt-4 bg-black">
+      <div className="lg:h-screen flex flex-col gap-16 md:gap-0 lg:gap-0 px-0 ">
       <Header />
       <Hero />
       </div>
@@ -23,6 +25,8 @@ function App() {
       <WhyShouldYouJoin />
       <SuccesStory />
       <Join />
+      <Footer />
+      <FooterBottom />
     </div>
   );
 }

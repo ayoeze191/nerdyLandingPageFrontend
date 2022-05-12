@@ -48,7 +48,7 @@ const JobOffers = () => {
         </div>
        
         </div>
-        <div className='flex flex-col mx-auto p-10 w-full relative lg:-mt-72 xl:-mt-96 max-w-lg lg:max-w-none'>
+        <div className='flex flex-col mx-auto p-10 w-full relative lg:-mt-72 xl:-mt-96 max-w-2xl lg:max-w-none'>
             <div className='flex flex-col gap-8 lg:grid md:grid-cols-3 lg:gap-4 mb-4 xl:gap-8'>
               {lis1.map((a) => <Jobs {...a} />)}
             </div>

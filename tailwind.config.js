@@ -22,7 +22,8 @@ module.exports = {
      fontFamily: {
        'Montserrat-Bold': ['Montserrat-Bold'],
        'Montserrat-Medium': ['Montserrat-Medium'],
-       'Montserrat-normal': ['Montserrat-normal']
+       'Montserrat-normal': ['Montserrat-normal'],
+       'Montserrat-Light': ['Montserrat-Light']
      } 
     },
   },

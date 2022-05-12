@@ -121,6 +121,10 @@
   font-family: 'Montserrat-normal';
   src: local('Montserrat-normal'), url(./Fonts/Montserrat-SemiBold.ttf) format('truetype');
 }
+@font-face {
+  font-family: 'Montserrat-Light';
+  src: local('Montserrat-normal'), url(./Fonts/Montserrat-Light.ttf) format('truetype');
+}
 
 .sectors{
   background: linear-gradient(180deg, rgba(7, 7, 7, 0) 0%, #020202 100%);

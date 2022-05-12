@@ -5,7 +5,7 @@ import signature from "./../../Assets/signature.png"
 
 const Join = () => {
   return (
-      <div className='mx-auto flex flex-col items-center lg:container'>
+      <div className='mx-auto flex flex-col items-center lg:container py-20'>
        <img src={signature}  className = 'mx-auto mb-10 md:w-96 md:h-[53px] mt-20'/>
     <div className='flex flex-col md:flex-row w-full '>
             <div className='hidden md:flex  relative  px-10 py-10 w-4/5 items-center justify-center '>
