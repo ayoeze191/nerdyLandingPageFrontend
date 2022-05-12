@@ -12,7 +12,7 @@ import WhyShouldYouJoin from "./Components/WhyShouldYouJoin/WhyShouldYouJoin";
 function App() {
   return (
     <div className="App py-4 bg-black">
-      <div className="lg:h-screen flex flex-col gap-16 md:gap-16 lg:gap-0 px-0 ">
+      <div className="md:h-screen flex flex-col gap-16 md:gap-0 lg:gap-0 px-0 ">
       <Header />
       <Hero />
       </div>

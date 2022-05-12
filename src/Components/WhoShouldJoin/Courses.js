@@ -29,12 +29,12 @@ const Courses = () => {
     
   return (
     <div className="courses flex gap-4 items-center">
-         <div className='prevNav text-white cursor-pointer mb-10 hidden md:block' ref={prevRef}> <img src={LEFTARROW} className = "w-28" /></div>
+         <div className='prevNav text-white cursor-pointer mb-10 hidden md:block' ref={prevRef}> <img src={LEFTARROW} className = "w-16" /></div>
         <Swiper
        
         loop = {true}
         speed={600}
-      spaceBetween={50}
+      spaceBetween={10}
       modules={[Pagination]}
       autoplay = {{"delay": 5000}}
       pagination = {{clickable: true}}
@@ -77,7 +77,7 @@ const Courses = () => {
           </SwiperSlide>)}
   
         </Swiper>
-        <div className='nextNav text-white cursor-pointer mb-10 hidden md:block' ref={nextRef}><img src={RIGHTARROW} className = "w-28"/> </div>
+        <div className='nextNav text-white cursor-pointer mb-10 hidden md:block' ref={nextRef}><img src={RIGHTARROW} className = "w-16"/> </div>
     </div>
   )
 }
