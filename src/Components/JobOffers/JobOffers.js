@@ -56,7 +56,10 @@ const JobOffers = () => {
             {lis2.map((a) => <Jobs {...a} />)}
             </div>
         </div>
+        
+        <div className='w-full flex justify-center lg:hidden'><button className='px-6 py-3 border-solid border-[#D23432] text-[#D23432] border-2 rounded-lg mx-auto font-Montserrat-Bold'>See More</button></div>
         <img src={signature}  className = 'mx-auto mb-10 lg:mb-14 lg:w-96 lg:h-[53px] mt-20'/>
+     
     </div>
   )
 }
