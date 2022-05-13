@@ -58,7 +58,7 @@
 }
 
 .courses .swiper-wrapper{
-  @apply mb-12 bg-green-900
+  @apply mb-12 
 }
 
 .testifiers .swiper-pagination{

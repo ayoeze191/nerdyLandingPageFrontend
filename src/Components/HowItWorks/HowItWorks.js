@@ -1,13 +1,26 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import How from './How'
 
 
 const HowItWorks = () => {
     const [lis, setlis] = useState([
-        {value: '1', title: 'Title goes here', text:'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Non aliquet in lacus, duis sagittis. Eget elementum duis'},
+        ])
+
+      const runfunction = () =>{ 
+        // An api call will  be made here to set the state
+        const apiValue = [{value: '1', title: 'Title goes here', text:'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Non aliquet in lacus, duis sagittis. Eget elementum duis'},
         {value: '2', title: 'Title goes here', text:'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Non aliquet in lacus, duis sagittis. Eget elementum duis'},
         {value: '3', title: 'Title goes here', text:'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Non aliquet in lacus, duis sagittis. Eget elementum duis'},
-    ])
+      ]
+      setlis(apiValue)
+    }
+
+    useEffect(() => {
+      runfunction()
+    }, [])
+
+
+
 
   return (
     <div className='block w-full mx-auto bg-[#222222]/40 p-10 text-white'>

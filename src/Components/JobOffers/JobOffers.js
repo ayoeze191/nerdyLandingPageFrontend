@@ -22,7 +22,7 @@ const JobOffers = () => {
     {image: reactjobs, text: 'React Js Developer', location: 'Lagos', mode: 'Full time', companyName:'Amazon', companyLogo: meta, locmage: location, title: 'Software Development', mobile: true},
   ])
   return (
-    <div className=' md:px-20 pb-10'>
+    <div className=' md:px-20 py-10'>
          <img src={signature}  className = 'mx-auto mb-24 lg:w-96 lg:h-[53px]'/>
          <div className='text-white font-Montserrat-Bold text-center mb-20 sm:text-xl lg:text-[32px]'>JOB OFFERS</div>
          
@@ -47,8 +47,8 @@ const JobOffers = () => {
         </div>
         </div>
        
-        </div>
-        <div className='flex flex-col mx-auto p-10 w-full relative lg:-mt-72 xl:-mt-96 max-w-2xl lg:max-w-none'>
+        </div> 
+        <div className='flex flex-col mx-auto p-10 w-full relative lg:-mt-72 xl:-mt-96 max-w-lg lg:max-w-none'>
             <div className='flex flex-col gap-8 lg:grid md:grid-cols-3 lg:gap-4 mb-4 xl:gap-8'>
               {lis1.map((a) => <Jobs {...a} />)}
             </div>

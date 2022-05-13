@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import { useState } from 'react'
 import react from './../../Assets/react.png'
 import Graphics from './../../Assets/Graphics.png'
@@ -17,15 +17,31 @@ SwiperCore.use([Navigation, Pagination, Scrollbar, A11y, Autoplay])
 
 
 const Courses = () => {
-    const [lis, setLis] = useState([
+
+    // this state is being managed with usestate because it is local to this component 
+    const [lis, setLis] = useState([])
+
+    const prevRef = useRef(null)
+    const nextRef = useRef(null)
+
+    const runfunction = () => { 
+      // An api call will  be made here to set the state
+      const apiValue = [
         {image: UIUX, title: 'UIUX'},
         {image: react, title: 'React Developer'},
         {image: Graphics, title: 'Graphic Design'},
         {image: Developer, title: 'Developer'},
-      ])
+      ]
+    setLis(apiValue)
+  }
 
-    const prevRef = useRef(null)
-    const nextRef = useRef(null)
+  useEffect(() => {
+    runfunction()
+  }, [])
+
+  
+
+
     
   return (
     <div className="courses flex gap-4 items-center">
