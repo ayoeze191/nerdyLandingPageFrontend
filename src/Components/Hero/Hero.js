@@ -15,7 +15,7 @@ const Hero = () => {
     let body = null 
     if(loading) {
         body = <Loading />
-        
+
     }
     else{
         body = <> <div className='flex flex-col gap-8 sm:items-start px-4 md:px-0 items-center  w-[90%] sm:container text-left md:w-fit '>
@@ -50,7 +50,7 @@ const Hero = () => {
     }, [])
 
   return (
-    <div className='hero  text-white w-full flex flex-col items-center gap-10 md:gap-0 md:flex-row sm:justify-between overflow-hidden sm:flex-1 lg:pl-16 md:pl-8'>
+    <div className='hero  text-white w-full flex flex-col justify-center items-center gap-10 md:gap-0 md:flex-row sm:justify-between overflow-hidden flex-1 lg:pl-16 md:pl-8 '>
        {body}
     </div>
   )
