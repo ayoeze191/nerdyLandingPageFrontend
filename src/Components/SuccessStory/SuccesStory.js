@@ -53,7 +53,7 @@ const SuccesStory = () => {
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Condimentum
         lectus placerat id in vehicula facilisi. Fusce tellus fringill
       </h1>
-      <div className="testifiers">
+      <div className="testifiers max-w-7xl mx-auto">
         <Swiper
           onInit={(swiper) => {
             swiper.activeIndex = 1;

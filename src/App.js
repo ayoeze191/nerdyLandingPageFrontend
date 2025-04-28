@@ -10,24 +10,40 @@ import SuccesStory from "./Components/SuccessStory/SuccesStory";
 // import JobOffers from "./Components/JobOffers/JobOffers";
 import WhoShouldJoin from "./Components/WhoShouldJoin/WhoShouldJoin";
 import WhyShouldYouJoin from "./Components/WhyShouldYouJoin/WhyShouldYouJoin";
-
+import { ReactLenis, useLenis } from "lenis/react";
+import { useRef, useEffect } from "react";
 function App() {
+  // const lenis = useLenis(({ scroll }) => {
+  //   // called every scroll
+  // });
+  const lenisRef = useRef();
+  useEffect(() => {
+    function update(time) {
+      lenisRef.current?.lenis?.raf(time);
+    }
+
+    const rafId = requestAnimationFrame(update);
+
+    return () => cancelAnimationFrame(rafId);
+  }, []);
   return (
-    <div className="App pt-4 bg-black">
+    <ReactLenis root ref={lenisRef}>
+      <div className="App  bg-black">
         <div className="min-h-screen lg:h-screen flex flex-col gap-16 md:gap-0 lg:gap-0 px-0 ">
-      <Header />
-      <Hero />
+          <Header />
+          <Hero />
+        </div>
+        <HowItWorks />
+        <WhoShouldJoin />
+        <JobOffers />
+        <Browse />
+        <WhyShouldYouJoin />
+        <SuccesStory />
+        <Join />
+        <Footer />
+        <FooterBottom />
       </div>
-      <HowItWorks />
-      <WhoShouldJoin />
-      <JobOffers />
-      <Browse />
-      <WhyShouldYouJoin />
-      <SuccesStory />
-      <Join />
-      <Footer />
-      <FooterBottom />
-    </div>
+    </ReactLenis>
   );
 }
 
