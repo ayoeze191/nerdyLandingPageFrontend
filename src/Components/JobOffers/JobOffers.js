@@ -70,6 +70,7 @@ const JobOffers = () => {
     },
   ]);
   const contref = useRef(null);
+
   return (
     <div className=" md:px-20 py-10" ref={contref}>
       <Signature contRef={contref} />
@@ -122,10 +123,9 @@ const JobOffers = () => {
           See More
         </button>
       </div>
-      <img
-        src={signature}
-        className="mx-auto mb-10 lg:mb-14 lg:w-96 lg:h-[53px] mt-20"
-      />
+      <div className="mb-10 lg:mb-14 mt-20">
+        <Signature contRef={contref} />
+      </div>
     </div>
   );
 };

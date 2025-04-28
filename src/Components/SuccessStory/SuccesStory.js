@@ -59,6 +59,7 @@ const SuccesStory = () => {
             swiper.activeIndex = 1;
             swiper.params.slideActiveClass = "activ";
           }}
+          loop
           effect={"coverflow"}
           coverflowEffect={{
             rotate: 0,
